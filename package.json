@@ -1,0 +1,28 @@
+{
+  "name": "stalkr-api",
+  "version": "0.0.0",
+  "description": "A JavaScript high level wrapper around Stalkr's API",
+  "main": "lib/Stalkr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getstalkr/stalkr-api-js.git"
+  },
+  "keywords": [
+    "js",
+    "api",
+    "stalkr",
+    "javascript"
+  ],
+  "author": "Matheus Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getstalkr/stalkr-api-js/issues"
+  },
+  "homepage": "https://github.com/getstalkr/stalkr-api-js#readme",
+  "dependencies": {
+    "axios": "^0.16.2"
+  }
+}
