@@ -1,0 +1,70 @@
+{
+  "name": "stalkr-api-js-client",
+  "version": "0.0.3",
+  "description": "A JavaScript high level wrapper around Stalkr's API",
+  "main": "cjs/index.js",
+  "browser": "dist/stalkrClient.js",
+  "module": "es/index.js",
+  "jsxnext:main": "es/index.js",
+  "files": [
+    "dist",
+    "cjs",
+    "es",
+    "src"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "build": "clear && npm run test && npm run build:cjs && npm run build:es && npm run build:umd",
+    "build:watch": "clear && rm -rf cjs && cross-env BABEL_ENV=cjs babel -w src --out-dir cjs",
+    "build:es": "rm -rf es && cross-env BABEL_ENV=es babel src --out-dir es",
+    "build:cjs": "rm -rf cjs && cross-env BABEL_ENV=cjs babel src --out-dir cjs",
+    "build:umd": "rm -rf dist && cross-env BABEL_ENV=es rollup -c & cross-env BABEL_ENV=es NODE_ENV=production rollup -c",
+    "test:lint:eslint": "eslint src/*.js",
+    "test:lint:flow": "flow --color always",
+    "test:lint": "npm run test:lint:eslint && npm run test:lint:flow",
+    "test:spec:coverage": "jest --coverage ",
+    "test:spec:coverage:report": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "test:spec:watch": "clear && jest --watch",
+    "test:spec": "clear && jest",
+    "test": "npm run test:lint && npm run test:spec:coverage",
+    "docs:TOC": "markdown-toc README.md -i"
+  },
+  "keywords": [
+    "stalkr",
+    "js",
+    "api",
+    "javascript",
+    "infrastructure",
+    "devops",
+    "monitoring"
+  ],
+  "author": "Stalkr Foundation &lt;@getstalkr&gt; (undefined)",
+  "license": "MIT",
+  "repository": "getstalkr/stalkr-api-js-client",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.17.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-preset-es2015": "^6.16.0",
+    "coveralls": "^2.11.15",
+    "cross-env": "^3.1.3",
+    "eslint": "^3.12.0",
+    "eslint-config-devine": "^1.6.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "flow-bin": "^0.37.0",
+    "jest": "^18.1.0",
+    "markdown-toc": "^1.1.0",
+    "rollup": "^0.39.2",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-bundle-size": "^1.0.1",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.2"
+  }
+}
