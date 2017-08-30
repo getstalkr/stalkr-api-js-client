@@ -1,6 +1,6 @@
 {
   "name": "stalkr-api-js-client",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "A JavaScript high level wrapper around Stalkr's API",
   "main": "cjs/index.js",
   "browser": "dist/stalkrClient.js",
