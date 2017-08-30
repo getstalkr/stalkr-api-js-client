@@ -17,7 +17,7 @@
 </a>
 
 <a href="https://codebeat.co/projects/github-com-getstalkr-stalkr-api-js-client-master">
-	<img alt="codebeat badge" src="https://codebeat.co/badges/88ec80a1-e3b0-4e0f-9c76-4a717e68a252" />
+  <img alt="codebeat badge" src="https://codebeat.co/badges/4ec6fc86-83e1-43e0-b581-d4ebdc358a87" />
 </a>
 
 <a href="https://codeclimate.com/github/getstalkr/stalkr-api-js-client">
