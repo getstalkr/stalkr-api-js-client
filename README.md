@@ -85,5 +85,5 @@ We are open to contributions, see [CONTRIBUTING.md](CONTRIBUTING.md) for more in
 > GitHub [@ythecombinator](https://github.com/ythecombinator) &nbsp;&middot;&nbsp;
 > Twitter [@ythecombinator](https://twitter.com/ythecombinator)
 
-> [cardo.so](https://cardo.so) &nbsp;&middot;&nbsp;
+> [cardo.so](http://cardo.so) &nbsp;&middot;&nbsp;
 > GitHub [@cardoso](https://github.com/cardoso)
